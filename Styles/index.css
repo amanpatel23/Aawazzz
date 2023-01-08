@@ -238,7 +238,8 @@ body {
 #latest_release__grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 4px !important;
+  grid-column-gap: 12px !important;
+  grid-row-gap: 6px !important;
 }
 
 .latest_release__card {
@@ -246,7 +247,7 @@ body {
   /* background: blue; */
   display: flex;
   align-items: center;
-  /* padding: 8px; */
+  padding: 0 8px;
 }
 
 .latest_release__card__ff {
@@ -292,6 +293,135 @@ body {
   width: 80px;
   height: 80px;
   object-fit: contain;
+}
+
+/* different__zoneras styles start */
+
+#different__zoneras {
+  margin-top: 30px;
+}
+
+/* different__zoneras__ff starts */
+
+#different__zoneras__ff {
+  background: #000;
+  padding: 10px 0;
+}
+
+#different__zoneras__ff__list {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.different__zoneras__ff__item {
+  justify-self: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.different__zoneras__ff__item__img {
+  position: relative;
+}
+
+.different__zoneras__ff__item__img img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  opacity: 0.4;
+}
+
+.different__zoneras__ff__item__text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.different__zoneras__ff__item__text p {
+  color: #fff;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+/* different__zoneras__ff ends */
+
+/* different__zoneras__ss starts */
+#different__zoneras__ss {
+  margin-top: 30px;
+}
+
+#different__zoneras__ss__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.different__zoneras__ss__item {
+  justify-self: center;
+}
+
+.different__zoneras__ss__item__img {
+  position: relative;
+}
+
+.different__zoneras__ss__item__img img {
+  width: 220px;
+  height: 150px;
+  object-fit: cover;
+  opacity: 0.6;
+}
+
+.different__zoneras__ss__item__text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.different__zoneras__ss__item__text p {
+  color: #fff;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+/* different__zoneras styles end */
+
+#popular__artist__section {
+  margin-top: 30px;
+  padding: 10px;
+}
+
+#popular__artist__section__heading p {
+  font-size: 1.1rem;
+  color: #fff;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+#popular__artist__section__grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.popular__artist__section__grid__item {
+  justify-self: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 6px;
+}
+
+.popular__artist__section__grid__item img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.popular__artist__section__grid__item p {
+  font-size: 0.8rem;
+  color: #fff;
+  font-weight: 600;
 }
 
 #website__navbar__items {
@@ -432,7 +562,7 @@ body {
 }
 
 .song_desc__song_name p {
-  font-size: 1rem;
+  font-size: 0.8rem;
   font-weight: bold;
 }
 
