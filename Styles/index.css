@@ -201,7 +201,15 @@ body {
   padding: 10px 10px 24px 10px;
   border-radius: 6px;
   box-shadow: 1px 1px 10px #000;
+  transition: transform 0.2s ease-in-out;
 }
+
+.trending__songs__card:hover {
+  cursor: pointer;
+  transform: scale(1.3);
+  z-index: 1;
+}
+
 
 .trending__songs__card__img img {
   width: 150px;
@@ -290,6 +298,15 @@ body {
   color: #b3b3b3;
 }
 
+.latest_release__card__ff__img:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.latest_release__card__ff__img:focus + #video__player {
+  display: none;
+}
+
 .latest_release__card__ff__img img {
   width: 80px;
   height: 80px;
@@ -365,6 +382,8 @@ body {
 
 .different__zoneras__ss__item__img {
   position: relative;
+  overflow: hidden;
+  
 }
 
 .different__zoneras__ss__item__img img {
@@ -372,6 +391,12 @@ body {
   height: 150px;
   object-fit: cover;
   opacity: 0.6;
+  transition: 0.3s all ease-in-out;
+}
+
+.different__zoneras__ss__item__img:hover img {
+  cursor: pointer;
+  transform: scale(1.3);
 }
 
 .different__zoneras__ss__item__text {
@@ -485,19 +510,18 @@ body {
 }
 
 #ff__1__desc {
-  margin-left: 4px;
+  margin-left: 8px;
 }
 
 #ff__1__desc__song_name {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   color: #fff;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 #ff__1__desc__artist_name {
-  font-size: 0.8rem;
+  font-size: 0.6rem;
   color: #b3b3b3;
-  font-weight: bold;
 }
 
 #ff__1__img img {
@@ -510,7 +534,7 @@ body {
   margin-left: auto;
   display: flex;
   align-items: center;
-  column-gap: 4px;
+  column-gap: 8px;
 }
 
 #video__player__div__ff__2 i {
@@ -535,6 +559,10 @@ body {
 
 #video__player__div__ss__1 i {
   font-size: 1.2rem;
+  color: #b3b3b3;
+}
+
+#pause__button i {
   color: #fff;
 }
 
@@ -579,16 +607,39 @@ body {
 }
 
 #video__player__div__th {
+  display: flex;
   justify-content: center;
   align-items: center;
-  display: flex;
   /* background: red; */
+}
+
+#video__player__div__th__1 {
+  display: flex;
+  column-gap: 8px;
+  align-items: center;
 }
 
 #video__player__div__th__1 i {
   color: #fff;
 }
 
+#video__player__div__th__1 div {
+
+  width: 100px;
+  height: 4px;
+  background: #5e5e5e;
+  border-radius: 2px;
+  position: relative;
+}
+
+#video__player__div__th__1 div::after {
+  position: absolute;
+  content: '';
+  width: 50%;
+  height: 100%;
+  background: #fff;
+  border-radius: inherit;
+}
 
 /* video__player style ends */
 
