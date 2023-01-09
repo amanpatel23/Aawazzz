@@ -263,9 +263,9 @@ body {
 }
 
 .card__ff__desc__song_name {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   color: #fff;
-  font-weight: bold;
+  font-weight: 600;
 }
 
 .card__ff__desc__release_date {
@@ -317,6 +317,8 @@ body {
   justify-self: center;
   display: flex;
   flex-direction: column;
+  border-radius: 50%;
+  box-shadow: 2px 0px 2px #fff;
 }
 
 .different__zoneras__ff__item__img {
@@ -328,7 +330,7 @@ body {
   height: 100px;
   object-fit: cover;
   border-radius: 50%;
-  opacity: 0.4;
+  opacity: 0.6;
 }
 
 .different__zoneras__ff__item__text {
@@ -385,6 +387,61 @@ body {
 }
 
 /* different__zoneras styles end */
+
+
+/* different__language__songs style starts */
+
+#different__language__songs {
+  margin-top: 30px;
+}
+
+.different__language__songs__ff {
+  padding: 10px;
+}
+
+.lang__song__heading p {
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.latest__lang__songs {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+.latest__lang__songs__card {
+  justify-self: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.latest__lang__songs__card__img img {
+  height: 100px;
+  width: 100px;
+}
+
+.latest__lang__songs__card__desc {
+  margin-top: 4px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2px;
+}
+
+.latest__lang__songs__card__desc__song_name p {
+  font-size: 0.8rem;
+  color: #fff;
+  font-weight: 600;
+}
+
+.latest__lang__songs__card__desc__release_date p {
+  font-size: 0.6rem;
+  color: #b3b3b3;
+  font-weight: bold;
+}
+
+/* different__language__songs style ends */
+
 
 #popular__artist__section {
   margin-top: 30px;
