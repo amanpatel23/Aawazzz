@@ -207,7 +207,7 @@ body {
 .trending__songs__card:hover {
   cursor: pointer;
   transform: scale(1.3);
-  z-index: 1;
+  z-index: 3;
 }
 
 
