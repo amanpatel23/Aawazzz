@@ -185,7 +185,7 @@ body {
   position: sticky;
   top: 0;
   box-shadow: 0px 1px #000;
-  z-index: 1;
+  z-index: 2;
 }
 
 #trending__songs {
@@ -257,6 +257,7 @@ body {
   display: flex;
   align-items: center;
   padding: 0 8px;
+  position: relative;
 }
 
 .latest_release__card__ff {
@@ -292,6 +293,10 @@ body {
   color: #fff;
 }
 
+.latest_release__card__ss i:hover {
+  cursor: pointer;
+}
+
 .latest_release__card__ss p {
   font-size: 0.6rem;
   font-weight: bold;
@@ -303,14 +308,69 @@ body {
   opacity: 0.7;
 }
 
-.latest_release__card__ff__img:focus + #video__player {
-  display: none;
-}
 
 .latest_release__card__ff__img img {
   width: 80px;
   height: 80px;
   object-fit: contain;
+}
+
+.latest__release__card__popup {
+  /* display: none; */
+  position: absolute;
+  top: 45px;
+  right: 0;
+  background: #fff;
+  border-radius: 4px;
+  display: none;
+}
+
+.latest__release__popup__div {
+  padding: 6px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+}
+
+.latest__release__popup__item {
+  display: flex;
+  align-items: center;
+  column-gap: 8px;
+  color: #000;
+}
+
+.latest__release__popup__item p {
+  color: #000;
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+
+.latest__release__popup__item i {
+  color: #000;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+#latest__release__card__1[type="checkbox"]:checked ~ #latest__release__card__1__popup {
+  display: block;
+  z-index: 1;
+}
+
+#latest__release__card__2[type="checkbox"]:checked ~ #latest__release__card__2__popup {
+  display: block;
+  z-index: 1;
+}
+
+#latest__release__card__3[type="checkbox"]:checked ~ #latest__release__card__3__popup {
+  display: block;
+  z-index: 1;
+}
+
+#latest__release__card__4[type="checkbox"]:checked ~ #latest__release__card__4__popup {
+  display: block;
+  z-index: 1;
 }
 
 /* different__zoneras styles start */
@@ -795,8 +855,40 @@ body {
   color: #1ed760;
 }
 
+#song_queue__dropdown__icon {
+  position: relative;
+}
+
+.song_queue__popup__div {
+  position: absolute;
+  background: #fff;
+  left: -140px;
+  top: 30px;
+  padding: 4px 14px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 4px;
+  border-radius: 4px;
+}
+
+.song_queue__popup__div__item p {
+  font-size: 0.8rem;
+}
+
 #song_queue__dropdown__icon i {
   color: #1ed760;
+}
+
+#song_queue__popup[type="checkbox"] {
+  display: none;
+}
+
+#song_queue__popup[type="checkbox"]:checked ~ .song_queue__popup__div {
+  display: none;
+}
+
+#song_queue__dropdown__icon i:hover {
+  cursor: pointer;
 }
 
 .song_queue__items__item {
