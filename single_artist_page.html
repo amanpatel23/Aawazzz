@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aawazzz | Artist</title>
+
+    <!-- adding google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- adding font awesome -->
+    <script
+      src="https://kit.fontawesome.com/d51660f56d.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="./Styles/single_artist_page.css" />
+  </head>
+  <body>
+    <nav id="website__navbar">
+      <div id="website__navbar__items">
+        <div id="website__navbar__ul__ff">
+          <a id="website__logo__link" href="./index.html" target="_blank">
+            <div id="website-logo">
+              <div id="website-logo__image">
+                <i class="fa-solid fa-radio"></i>
+              </div>
+
+              <div id="website-logo__text">
+                <h3>AawazzZ</h3>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div id="website__navbar__ul__ss">
+          <div id="website__navbar__ul__ss__search">
+            <div id="navbar__ul__ss__search__div">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <input type="text" placeholder="Search" />
+              <i class="fa-solid fa-microphone"></i>
+            </div>
+          </div>
+
+          <div id="website__navbar__ul__ss__notification">
+            <div id="navbar__ul__ss__notification__div">
+              <i class="fa-solid fa-bell"></i>
+            </div>
+          </div>
+
+          <div id="website__navbar__ul__ss__profile">
+            <div id="__profile__container">
+              <div id="__profile__container__profile_icon">
+                <i class="fa-solid fa-user"></i>
+              </div>
+              <div id="__profile__container__profile_name">
+                <p>AMAN PATEL</p>
+              </div>
+              <div id="__profile__container__dropdown_icon">
+                <i class="fa-solid fa-caret-down"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <aside id="website-sidebar__song_queue">
+      <div id="song__queue__1" class="song__queue__division">
+        <div id="song_queue__1__header">
+          <div id="song_queue__1__header__ff">
+            <p>Similar Artists</p>
+          </div>
+          <div id="song_queue__1__header__ss">
+            <p>View All</p>
+          </div>
+        </div>
+        <div id="song__queue__1__items">
+          <div class="latest_release__card">
+            <div class="latest_release__card__ff">
+              <div class="latest_release__card__ff__img">
+                <img src="assets/latest_songs_img/img1.jpg" />
+              </div>
+              <div class="latest_release__card__ff__desc">
+                <p class="card__ff__desc__song_name">Sita Raman</p>
+                <p class="card__ff__desc__release_date">Xyzabc</p>
+              </div>
+            </div>
+
+            <div class="latest_release__card__ss">
+              <label for="latest__release__card__1"
+                ><i class="fa-solid fa-ellipsis"></i
+              ></label>
+              <input type="checkbox" id="latest__release__card__1" />
+
+              <p class="latest_release__card__ss__song_length">4:54</p>
+
+              <div
+                class="latest__release__card__popup"
+                id="latest__release__card__1__popup"
+              >
+                <div class="latest__release__popup__div">
+                  <div class="latest__release__popup__item">
+                    <i class="fa-solid fa-play"></i>
+                    <p>Play Now</p>
+                  </div>
+                  <div class="latest__release__popup__item">
+                    <i class="fa-solid fa-plus"></i>
+                    <p>Add To Queue</p>
+                  </div>
+                  <div class="latest__release__popup__item">
+                    <i class="fa-solid fa-heart-circle-plus"></i>
+                    <p>Add To Favourites</p>
+                  </div>
+                  <div class="latest__release__popup__item">
+                    <i class="fa-solid fa-circle-info"></i>
+                    <p>Get Info</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="latest_release__card">
+            <div class="latest_release__card__ff">
+              <div class="latest_release__card__ff__img">
+                <img src="assets/latest_songs_img/img1.jpg" />
+              </div>
+              <div class="latest_release__card__ff__desc">
+                <p class="card__ff__desc__song_name">Sita Raman</p>
+                <p class="card__ff__desc__release_date">Xyzabc</p>
+              </div>
+            </div>
+
+            <div class="latest_release__card__ss">
+              <label for="latest__release__card__1"
+                ><i class="fa-solid fa-ellipsis"></i
+              ></label>
+              <input type="checkbox" id="latest__release__card__1" />
+
+              <p class="latest_release__card__ss__song_length">4:54</p>
+
+              <div
+                class="latest__release__card__popup"
+                id="latest__release__card__1__popup"
+              >
+                <div class="latest__release__popup__div">
+                  <div class="latest__release__popup__item">
+                    <i class="fa-solid fa-play"></i>
+                    <p>Play Now</p>
+                  </div>
+                  <div class="latest__release__popup__item">
+                    <i class="fa-solid fa-plus"></i>
+                    <p>Add To Queue</p>
+                  </div>
+                  <div class="latest__release__popup__item">
+                    <i class="fa-solid fa-heart-circle-plus"></i>
+                    <p>Add To Favourites</p>
+                  </div>
+                  <div class="latest__release__popup__item">
+                    <i class="fa-solid fa-circle-info"></i>
+                    <p>Get Info</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="latest_release__card">
+            <div class="latest_release__card__ff">
+              <div class="latest_release__card__ff__img">
+                <img src="assets/latest_songs_img/img1.jpg" />
+              </div>
+              <div class="latest_release__card__ff__desc">
+                <p class="card__ff__desc__song_name">Sita Raman</p>
+                <p class="card__ff__desc__release_date">Xyzabc</p>
+              </div>
+            </div>
+
+            <div class="latest_release__card__ss">
+              <label for="latest__release__card__1"
+                ><i class="fa-solid fa-ellipsis"></i
+              ></label>
+              <input type="checkbox" id="latest__release__card__1" />
+
+              <p class="latest_release__card__ss__song_length">4:54</p>
+
+              <div
+                class="latest__release__card__popup"
+                id="latest__release__card__1__popup"
+              >
+                <div class="latest__release__popup__div">
+                  <div class="latest__release__popup__item">
+                    <i class="fa-solid fa-play"></i>
+                    <p>Play Now</p>
+                  </div>
+                  <div class="latest__release__popup__item">
+                    <i class="fa-solid fa-plus"></i>
+                    <p>Add To Queue</p>
+                  </div>
+                  <div class="latest__release__popup__item">
+                    <i class="fa-solid fa-heart-circle-plus"></i>
+                    <p>Add To Favourites</p>
+                  </div>
+                  <div class="latest__release__popup__item">
+                    <i class="fa-solid fa-circle-info"></i>
+                    <p>Get Info</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="latest_release__card">
+            <div class="latest_release__card__ff">
+              <div class="latest_release__card__ff__img">
+                <img src="assets/latest_songs_img/img1.jpg" />
+              </div>
+              <div class="latest_release__card__ff__desc">
+                <p class="card__ff__desc__song_name">Sita Raman</p>
+                <p class="card__ff__desc__release_date">Xyzabc</p>
+              </div>
+            </div>
+
+            <div class="latest_release__card__ss">
+              <label for="latest__release__card__1"
+                ><i class="fa-solid fa-ellipsis"></i
+              ></label>
+              <input type="checkbox" id="latest__release__card__1" />
+
+              <p class="latest_release__card__ss__song_length">4:54</p>
+
+              <div
+                class="latest__release__card__popup"
+                id="latest__release__card__1__popup"
+              >
+                <div class="latest__release__popup__div">
+                  <div class="latest__release__popup__item">
+                    <i class="fa-solid fa-play"></i>
+                    <p>Play Now</p>
+                  </div>
+                  <div class="latest__release__popup__item">
+                    <i class="fa-solid fa-plus"></i>
+                    <p>Add To Queue</p>
+                  </div>
+                  <div class="latest__release__popup__item">
+                    <i class="fa-solid fa-heart-circle-plus"></i>
+                    <p>Add To Favourites</p>
+                  </div>
+                  <div class="latest__release__popup__item">
+                    <i class="fa-solid fa-circle-info"></i>
+                    <p>Get Info</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="song__queue__2" class="song__queue__division">
+        <div id="song_queue__header">
+          <div id="song_queue__header__ff">
+            <p>Recently Played</p>
+          </div>
+          <div id="song_queue__header__ss">
+            <p>View All</p>
+          </div>
+        </div>
+
+        <div id="song_queue__items">
+          <div class="song_queue__items__item">
+            <div class="queue__item__ff">
+              <div class="queue__item__num">
+                <p>01</p>
+              </div>
+              <div class="queue__item__img">
+                <img src="assets/song_queue_img/img1.jpg" />
+              </div>
+              <div class="queue__item__song_desc">
+                <div class="song_desc__song_name">
+                  <p>Kabira</p>
+                </div>
+                <div class="song_desc__artist_name">
+                  <p>Arijit Singh</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="queue__item__ss">
+              <div class="queue__item__like_icon">
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="song_queue__items__item">
+            <div class="queue__item__ff">
+              <div class="queue__item__num">
+                <p>02</p>
+              </div>
+              <div class="queue__item__img">
+                <img src="assets/song_queue_img/img2.jpg" />
+              </div>
+              <div class="queue__item__song_desc">
+                <div class="song_desc__song_name">
+                  <p>Pehli Dafa</p>
+                </div>
+                <div class="song_desc__artist_name">
+                  <p>Atif Aslam</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="queue__item__ss">
+              <div class="queue__item__like_icon">
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="song_queue__items__item">
+            <div class="queue__item__ff">
+              <div class="queue__item__num">
+                <p>03</p>
+              </div>
+              <div class="queue__item__img">
+                <img src="assets/song_queue_img/img1.jpg" />
+              </div>
+              <div class="queue__item__song_desc">
+                <div class="song_desc__song_name">
+                  <p>Kabira</p>
+                </div>
+                <div class="song_desc__artist_name">
+                  <p>Arijit Singh</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="queue__item__ss">
+              <div class="queue__item__like_icon">
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="song_queue__items__item">
+            <div class="queue__item__ff">
+              <div class="queue__item__num">
+                <p>04</p>
+              </div>
+              <div class="queue__item__img">
+                <img src="assets/song_queue_img/img2.jpg" />
+              </div>
+              <div class="queue__item__song_desc">
+                <div class="song_desc__song_name">
+                  <p>Pehli Dafa</p>
+                </div>
+                <div class="song_desc__artist_name">
+                  <p>Atif Aslam</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="queue__item__ss">
+              <div class="queue__item__like_icon">
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="song_queue__items__item">
+            <div class="queue__item__ff">
+              <div class="queue__item__num">
+                <p>05</p>
+              </div>
+              <div class="queue__item__img">
+                <img src="assets/song_queue_img/img1.jpg" />
+              </div>
+              <div class="queue__item__song_desc">
+                <div class="song_desc__song_name">
+                  <p>Kabira</p>
+                </div>
+                <div class="song_desc__artist_name">
+                  <p>Arijit Singh</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="queue__item__ss">
+              <div class="queue__item__like_icon">
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="song_queue__items__item">
+            <div class="queue__item__ff">
+              <div class="queue__item__num">
+                <p>06</p>
+              </div>
+              <div class="queue__item__img">
+                <img src="assets/song_queue_img/img2.jpg" />
+              </div>
+              <div class="queue__item__song_desc">
+                <div class="song_desc__song_name">
+                  <p>Pehli Dafa</p>
+                </div>
+                <div class="song_desc__artist_name">
+                  <p>Atif Aslam</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="queue__item__ss">
+              <div class="queue__item__like_icon">
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="song_queue__items__item">
+            <div class="queue__item__ff">
+              <div class="queue__item__num">
+                <p>07</p>
+              </div>
+              <div class="queue__item__img">
+                <img src="assets/song_queue_img/img1.jpg" />
+              </div>
+              <div class="queue__item__song_desc">
+                <div class="song_desc__song_name">
+                  <p>Kabira</p>
+                </div>
+                <div class="song_desc__artist_name">
+                  <p>Arijit Singh</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="queue__item__ss">
+              <div class="queue__item__like_icon">
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="song_queue__items__item">
+            <div class="queue__item__ff">
+              <div class="queue__item__num">
+                <p>08</p>
+              </div>
+              <div class="queue__item__img">
+                <img src="assets/song_queue_img/img2.jpg" />
+              </div>
+              <div class="queue__item__song_desc">
+                <div class="song_desc__song_name">
+                  <p>Pehli Dafa</p>
+                </div>
+                <div class="song_desc__artist_name">
+                  <p>Atif Aslam</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="queue__item__ss">
+              <div class="queue__item__like_icon">
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="song_queue__items__item">
+            <div class="queue__item__ff">
+              <div class="queue__item__num">
+                <p>09</p>
+              </div>
+              <div class="queue__item__img">
+                <img src="assets/song_queue_img/img1.jpg" />
+              </div>
+              <div class="queue__item__song_desc">
+                <div class="song_desc__song_name">
+                  <p>Kabira</p>
+                </div>
+                <div class="song_desc__artist_name">
+                  <p>Arijit Singh</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="queue__item__ss">
+              <div class="queue__item__like_icon">
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="song_queue__items__item">
+            <div class="queue__item__ff">
+              <div class="queue__item__num">
+                <p>10</p>
+              </div>
+              <div class="queue__item__img">
+                <img src="assets/song_queue_img/img2.jpg" />
+              </div>
+              <div class="queue__item__song_desc">
+                <div class="song_desc__song_name">
+                  <p>Pehli Dafa</p>
+                </div>
+                <div class="song_desc__artist_name">
+                  <p>Atif Aslam</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="queue__item__ss">
+              <div class="queue__item__like_icon">
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="song_queue__items__item">
+            <div class="queue__item__ff">
+              <div class="queue__item__num">
+                <p>11</p>
+              </div>
+              <div class="queue__item__img">
+                <img src="assets/song_queue_img/img1.jpg" />
+              </div>
+              <div class="queue__item__song_desc">
+                <div class="song_desc__song_name">
+                  <p>Kabira</p>
+                </div>
+                <div class="song_desc__artist_name">
+                  <p>Arijit Singh</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="queue__item__ss">
+              <div class="queue__item__like_icon">
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="song_queue__items__item">
+            <div class="queue__item__ff">
+              <div class="queue__item__num">
+                <p>12</p>
+              </div>
+              <div class="queue__item__img">
+                <img src="assets/song_queue_img/img2.jpg" />
+              </div>
+              <div class="queue__item__song_desc">
+                <div class="song_desc__song_name">
+                  <p>Pehli Dafa</p>
+                </div>
+                <div class="song_desc__artist_name">
+                  <p>Atif Aslam</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="queue__item__ss">
+              <div class="queue__item__like_icon">
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <main id="body__content">
+      <div id="body__content__div">
+        <div id="body__content__div__header">
+          <div id="body__content__div__header__ff">
+            <div id="header__ff__img">
+              <img src="./assets/billi_eilish_band/img1.jpg" />
+            </div>
+          </div>
+          <div id="body__content__div__header__ss">
+            <div id="header__ss__1">
+              <div id="band__name">
+                <p>XyzAbc</p>
+              </div>
+              <div id="followers">
+                <p>69 Followers</p>
+              </div>
+            </div>
+            <div id="header__ss__2">
+              <div id="band__country">
+                <p>Xyz Band</p>
+              </div>
+              <div id="band__desc">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis,
+                  repellat eius et, nesciunt odio temporibus enim possimus
+                  porro, nihil fugit aperiam voluptas. Eligendi voluptatem,
+                  maxime dolores, reiciendis facere tempore voluptatum non
+                  consequatur ut mollitia explicabo aperiam sed incidunt
+                  temporibus similique!
+                </p>
+              </div>
+            </div>
+            <div id="header__ss__3">
+              <div id="header__ss__3__button">
+                <p>Play All</p>
+              </div>
+              <div id="follow">
+                <p>Follow</p>
+              </div>
+            </div>
+            <div id="header__ss__4">
+              <p>69 Tracks | 69 Albums</p>
+            </div>
+          </div>
+        </div>
+        <div id="body__content__div__songs"></div>
+      </div>
+
+      <div id="main__body__playlist">
+        <div id="main__body__playlist__div">
+          <div class="song_queue__items__item playlist__item">
+            <div class="queue__item__ff">
+              <div class="queue__item__num">
+                <p>01</p>
+              </div>
+              <div class="queue__item__img">
+                <img src="assets/song_queue_img/img1.jpg" />
+              </div>
+              <div class="queue__item__song_desc">
+                <div class="song_desc__song_name">
+                  <p>Kabira</p>
+                </div>
+                <div class="song_desc__artist_name">
+                  <p>Arijit Singh</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="queue__item__ss">
+              <div class="queue__item__like_icon playlist__item__icons">
+                <i class="fa-solid fa-plus"></i>
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="song_queue__items__item playlist__item">
+            <div class="queue__item__ff">
+              <div class="queue__item__num">
+                <p>02</p>
+              </div>
+              <div class="queue__item__img">
+                <img src="assets/song_queue_img/img2.jpg" />
+              </div>
+              <div class="queue__item__song_desc">
+                <div class="song_desc__song_name">
+                  <p>Kabira</p>
+                </div>
+                <div class="song_desc__artist_name">
+                  <p>Arijit Singh</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="queue__item__ss">
+              <div class="queue__item__like_icon playlist__item__icons">
+                <i class="fa-solid fa-plus"></i>
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="song_queue__items__item playlist__item">
+            <div class="queue__item__ff">
+              <div class="queue__item__num">
+                <p>03</p>
+              </div>
+              <div class="queue__item__img">
+                <img src="assets/song_queue_img/img1.jpg" />
+              </div>
+              <div class="queue__item__song_desc">
+                <div class="song_desc__song_name">
+                  <p>Kabira</p>
+                </div>
+                <div class="song_desc__artist_name">
+                  <p>Arijit Singh</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="queue__item__ss">
+              <div class="queue__item__like_icon playlist__item__icons">
+                <i class="fa-solid fa-plus"></i>
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="song_queue__items__item playlist__item">
+            <div class="queue__item__ff">
+              <div class="queue__item__num">
+                <p>04</p>
+              </div>
+              <div class="queue__item__img">
+                <img src="assets/song_queue_img/img2.jpg" />
+              </div>
+              <div class="queue__item__song_desc">
+                <div class="song_desc__song_name">
+                  <p>Kabira</p>
+                </div>
+                <div class="song_desc__artist_name">
+                  <p>Arijit Singh</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="queue__item__ss">
+              <div class="queue__item__like_icon playlist__item__icons">
+                <i class="fa-solid fa-plus"></i>
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="song_queue__items__item playlist__item">
+            <div class="queue__item__ff">
+              <div class="queue__item__num">
+                <p>05</p>
+              </div>
+              <div class="queue__item__img">
+                <img src="assets/song_queue_img/img1.jpg" />
+              </div>
+              <div class="queue__item__song_desc">
+                <div class="song_desc__song_name">
+                  <p>Kabira</p>
+                </div>
+                <div class="song_desc__artist_name">
+                  <p>Arijit Singh</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="queue__item__ss">
+              <div class="queue__item__like_icon playlist__item__icons">
+                <i class="fa-solid fa-plus"></i>
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="song_queue__items__item playlist__item">
+            <div class="queue__item__ff">
+              <div class="queue__item__num">
+                <p>06</p>
+              </div>
+              <div class="queue__item__img">
+                <img src="assets/song_queue_img/img2.jpg" />
+              </div>
+              <div class="queue__item__song_desc">
+                <div class="song_desc__song_name">
+                  <p>Kabira</p>
+                </div>
+                <div class="song_desc__artist_name">
+                  <p>Arijit Singh</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="queue__item__ss">
+              <div class="queue__item__like_icon playlist__item__icons">
+                <i class="fa-solid fa-plus"></i>
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="song_queue__items__item playlist__item">
+            <div class="queue__item__ff">
+              <div class="queue__item__num">
+                <p>07</p>
+              </div>
+              <div class="queue__item__img">
+                <img src="assets/song_queue_img/img1.jpg" />
+              </div>
+              <div class="queue__item__song_desc">
+                <div class="song_desc__song_name">
+                  <p>Kabira</p>
+                </div>
+                <div class="song_desc__artist_name">
+                  <p>Arijit Singh</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="queue__item__ss">
+              <div class="queue__item__like_icon playlist__item__icons">
+                <i class="fa-solid fa-plus"></i>
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="song_queue__items__item playlist__item">
+            <div class="queue__item__ff">
+              <div class="queue__item__num">
+                <p>08</p>
+              </div>
+              <div class="queue__item__img">
+                <img src="assets/song_queue_img/img2.jpg" />
+              </div>
+              <div class="queue__item__song_desc">
+                <div class="song_desc__song_name">
+                  <p>Kabira</p>
+                </div>
+                <div class="song_desc__artist_name">
+                  <p>Arijit Singh</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="queue__item__ss">
+              <div class="queue__item__like_icon playlist__item__icons">
+                <i class="fa-solid fa-plus"></i>
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
