@@ -202,6 +202,9 @@ body {
   border-radius: 6px;
   box-shadow: 1px 1px 10px #000;
   transition: transform 0.2s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
 }
 
 .trending__songs__card:hover {
@@ -513,10 +516,20 @@ input[type='checkbox'] {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
 }
+
 .latest__lang__songs__card {
   justify-self: center;
   display: flex;
   flex-direction: column;
+}
+
+.latest__lang__songs__card:hover {
+  cursor: pointer;
+  box-shadow: 0px -4px 0px #1ed760;
+}
+
+.latest__lang__songs__card:hover .latest__lang__songs__card__desc p {
+  color: #1ed760;
 }
 
 .latest__lang__songs__card__img img {
@@ -809,6 +822,31 @@ input[type='checkbox'] {
   align-items: center;
 }
 
+#website__navbar__ul__ss__search {
+  background: #fff;
+  border-radius: 8px;
+}
+
+#navbar__ul__ss__search__div {
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  /* background: red; */
+}
+
+#website__navbar__ul__ss__search i {
+  font-size: 1rem;
+  color: #141414;
+}
+
+#navbar__ul__ss__search__div input {
+  background: none;
+  border: none;
+  color: #000;
+  outline: none;
+  padding: 0 6px;
+}
+
 #website__navbar__ul__ss__upgrade {
   margin-right: 50px;
   display: none;
@@ -945,6 +983,12 @@ input[type='checkbox'] {
   margin-bottom: 6px;
 }
 
+.song_queue__items__item:hover {
+  cursor: pointer;
+  background: #000;
+  box-shadow: 0px 2px #1ed760;
+}
+
 .queue__item__ff {
   color: #fff;
   display: flex;
@@ -981,3 +1025,113 @@ input[type='checkbox'] {
   color: #b3b3b3;
   margin-left: auto;
 }
+
+
+/* media queries starts */
+
+@media only screen and (max-width: 1080px) {
+  
+  #website-sidebar {
+    display: none;
+  }
+
+  #website-main-content {
+    margin-left: 0;
+  }
+
+  #trending__songs {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  #latest_release__grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  #popular__artist__section__grid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 24px !important;
+  }
+
+  #different__zoneras__ff__list {
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 24px !important;
+  }
+
+  #different__zoneras__ss__list {
+    grid-template-columns: repeat(1, 1fr);
+    grid-row-gap: 24px !important;
+  }
+
+  .latest__lang__songs {
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 24px !important;
+  }
+  
+}
+
+@media only screen and (max-width: 768px) {
+
+  #website-sidebar__song_queue {
+    display: none;
+  }
+
+  #website-main-content {
+    margin-right: 0;
+  }
+
+  #website__navbar__ul__ff {
+    display: none;
+  }
+
+  #video__player__div {
+    display: flex;
+    padding: 10px;
+  }
+
+  #video__player__div__ff {
+    display: none;
+  }
+
+  #video__player__div__th {
+    display: none;
+  }
+
+  #video__player__div__ss {
+    margin: auto;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+
+  #trending__songs {
+    grid-template-columns: repeat(1, 1fr);
+    grid-row-gap: 24px !important;
+  }
+
+  #latest_release__grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  #popular__artist__section__grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 24px !important;
+  }
+
+  #different__zoneras__ff__list {
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 24px !important;
+  }
+
+  #different__zoneras__ss__list {
+    grid-template-columns: repeat(1, 1fr);
+    grid-row-gap: 24px !important;
+  }
+
+  .latest__lang__songs {
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 24px !important;
+  }
+
+}
+
+/* media queries end */

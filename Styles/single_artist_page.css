@@ -202,6 +202,7 @@ body {
 .song_queue__items__item:hover {
   cursor: pointer;
   background: #000;
+  box-shadow: 0px 2px 0px #1ed760;
 }
 
 .queue__item__ff {
@@ -253,6 +254,7 @@ body {
 .latest_release__card:hover {
   background: #000;
   cursor: pointer;
+  box-shadow: 0px 2px 0px #1ed760;
 }
 
 .latest_release__card__ff {
@@ -477,3 +479,57 @@ input[type='checkbox'] {
 }
 
 /* main__body__playlist ends */ 
+
+
+
+/* media queries starts */
+
+@media only screen and (max-width: 995px) {
+  
+
+  #body__content__div {
+    padding: 0px;
+  }
+
+  #body__content__div__header {
+    flex-direction: column;
+    background: none;
+  }
+
+  #body__content__div__header__ff {
+    width: 100%;
+  }
+
+  #body__content__div__header__ss {
+    padding: 20px;
+    background: #1ed760;
+    padding: 0;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #website-sidebar__song_queue {
+    display: none;
+  }
+
+  #body__content {
+    margin-right: 0;
+  }
+
+  #website__navbar__ul__ss__search {
+    display: none;
+  }
+
+  #website__navbar__ul__ss__notification {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  
+  #website__navbar__ul__ff {
+    display: none;
+  }
+}
+
+/* media queries ends */
