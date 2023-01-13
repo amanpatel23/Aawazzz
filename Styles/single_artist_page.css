@@ -1,3 +1,4 @@
+/* removing the default margin and padding from the website */
 * {
   margin: 0;
   padding: 0;
@@ -5,15 +6,17 @@
   font-family: 'Montserrat', sans-serif;
 }
 
+/* hiding the scrollbar from the webpage */
 *::-webkit-scrollbar {
   display: none;
 }
 
+/* setting background color to the body */
 body {
   background: #121212;
 }
 
-
+/* styling the website navbar */
 #website__navbar {
   background: #16161a;
   position: sticky;
@@ -22,6 +25,7 @@ body {
   z-index: 2;
 }
 
+/* styling website navbar each item */
 #website__navbar__items {
   display: flex;
   align-items: center;
@@ -40,6 +44,7 @@ body {
   color: #1ed760;
 }
 
+/* styling website logo */
 #website-logo {
   /* background: blue; */
   display: flex;
@@ -73,6 +78,7 @@ body {
   padding: 0px 14px;
 }
 
+/* styling website navbar search div */
 #website__navbar__ul__ss__search {
   background: #fff;
   border-radius: 8px;
@@ -97,11 +103,13 @@ body {
   padding: 0 6px;
 }
 
+/* styling website navbar notification icon */
 #navbar__ul__ss__notification__div i {
   font-size: 1.2rem;
   color: #fff;
 }
 
+/* styling website navbar profile div */
 #__profile__container {
   display: flex;
   background: #282828;
@@ -129,6 +137,7 @@ body {
   color: #fff;
 }
 
+/* styling website sidebar song queue */
 #website-sidebar__song_queue {
   background: #121212;
 }
@@ -143,15 +152,18 @@ body {
   overflow-x: hidden;
 }
 
+/* styling website song queue first section */
 #song__queue__1__items {
         display: flex;
         flex-direction: column;
 }
 
+/* styling each item of the first section */
 .latest_release__card {
         margin-bottom: 8px;
 }
 
+/* styling header of the first section */
 #song_queue__1__header {
   display: flex;
   justify-content: space-between;
@@ -170,6 +182,7 @@ body {
   font-size: 0.8rem;
 }
 
+/* styling header of the second section of the queue */
 #song_queue__header {
   top: 0;
   position: sticky;
@@ -195,6 +208,7 @@ body {
   font-size: 0.8rem;
 }
 
+/* styling each item of the second section of the song queue */
 .song_queue__items__item {
   display: flex;
   align-items: center;
@@ -203,6 +217,7 @@ body {
   margin-bottom: 6px;
 }
 
+/* implementing the hover property of each song queue item */
 .song_queue__items__item:hover {
   cursor: pointer;
   background: #000;
@@ -248,13 +263,13 @@ body {
 
 /* song__queue__1 starts*/
 .latest_release__card {
-  /* background: blue; */
   display: flex;
   align-items: center;
   padding: 0 8px;
   position: relative;
 }
 
+/* implementing the hover property for the each song queue item */
 .latest_release__card:hover {
   background: #000;
   cursor: pointer;
@@ -304,19 +319,14 @@ body {
   color: #b3b3b3;
 }
 
-/* .latest_release__card__ff__img:hover {
-  cursor: pointer;
-  opacity: 0.7;
-} */
-
 .latest_release__card__ff__img img {
   width: 80px;
   height: 80px;
   object-fit: contain;
 }
 
+/* styling the popup div */
 .latest__release__card__popup {
-  /* display: none; */
   position: absolute;
   top: 45px;
   right: 0;
@@ -353,6 +363,7 @@ input[type='checkbox'] {
   display: none;
 }
 
+/* implementing the functionality for showing and hiding the popup item */
 #latest__release__card__1[type='checkbox']:checked
   ~ #latest__release__card__1__popup {
   display: block;
@@ -362,7 +373,6 @@ input[type='checkbox'] {
 /* song__queue__1 end */
 
 /* body__content start */
-
 #body__content {
         margin-right: 300px;
         color: #000;
@@ -372,6 +382,7 @@ input[type='checkbox'] {
         padding: 20px;
 }
 
+/* styling the body content header */
 #body__content__div__header {
         display: flex;
         background: #1ed760;
@@ -383,6 +394,7 @@ input[type='checkbox'] {
         margin-right: 24px;
 }
 
+/* setting the size of the image used in header section */
 #header__ff__img img {
         height: 350px;
 }
@@ -429,6 +441,7 @@ input[type='checkbox'] {
         margin-bottom: 4px;
 }
 
+/* styling the button */
 #header__ss__3__button {
         margin-right: 124px;
         background: #282828;
@@ -441,6 +454,7 @@ input[type='checkbox'] {
         font-weight: 500;
 }
 
+/* implementin the hover property for the button in header section */
 #header__ss__3__button:hover {
   cursor: pointer;
   background: #000;
@@ -466,6 +480,7 @@ input[type='checkbox'] {
   padding: 20px;
 }
 
+/* styling for each playlist item */
 .playlist__item {
   background: #282828;
   padding: 10px 20px;
@@ -477,6 +492,7 @@ input[type='checkbox'] {
   column-gap: 12px;
 }
 
+/* implementing the hover property for the each playlist item */
 .playlist__item:hover {
   cursor: pointer;
   background: #121212;
@@ -488,6 +504,7 @@ input[type='checkbox'] {
 
 /* media queries starts */
 
+/* breakpoint at 995px */
 @media only screen and (max-width: 995px) {
   
 
@@ -511,6 +528,7 @@ input[type='checkbox'] {
   }
 }
 
+/* breakpoint at 768px */
 @media only screen and (max-width: 768px) {
   #website-sidebar__song_queue {
     display: none;
@@ -529,6 +547,7 @@ input[type='checkbox'] {
   }
 }
 
+/* breakpoint at 600px */
 @media only screen and (max-width: 600px) {
   
   #website__navbar__ul__ff {
